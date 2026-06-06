@@ -52,6 +52,10 @@
 	reg = <0x0 0x8bc00000 0x0 0xf000000>;
 };
 
+&qseecom_ta_mem {
+	size = <0x0 0x1000000>;
+};
+
 &ipa_smmu_ap {
 	qcom,ipa-q6-smem-size = <36864>;
 };
