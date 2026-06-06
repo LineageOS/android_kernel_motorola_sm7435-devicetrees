@@ -56,6 +56,10 @@
 	reg = <0x0 0x8bc00000 0x0 0xf000000>;
 };
 
+&audio_cma_mem {
+	size = <0x0 0x1000000>;
+};
+
 &qseecom_ta_mem {
 	size = <0x0 0x1000000>;
 };
