@@ -48,12 +48,23 @@
     temperature = <95>;
 };
 
+&reserved_memory {
+	/delete-node/ chipinfo_mem;
+};
+
 &mpss_mem {
 	reg = <0x0 0x8bc00000 0x0 0xf000000>;
 };
 
 &qseecom_ta_mem {
 	size = <0x0 0x1000000>;
+};
+
+&soc {
+	qcom,guestvm_loader@e0600000 {
+		/delete-property/ ext-region;
+		/delete-property/ ext-label;
+	};
 };
 
 &ipa_smmu_ap {
